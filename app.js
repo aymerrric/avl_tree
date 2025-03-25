@@ -340,6 +340,7 @@ class Tree {
         } else {
           parent.right = nextRightChild;
         }
+        nextRightChild.parent = parent;
         nextRightChild.bubbleHeight();
         this.bubleUpRebalance(nextRightChild);
       }
